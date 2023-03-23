@@ -1,0 +1,17 @@
+
+  
+<div class="card">
+      <div class="card-body">
+        <form (ngSubmit)="callParent(model)" >
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Input</label>
+            <textarea [(ngModel)]="model.text" class="form-control"  name="text"  id="exampleFormControlTextarea1" rows="28" cols="50"></textarea>
+          </div>
+          
+          <button  type="submit" class="btn btn-primary" >Submit</button>
+        
+        </form>
+      </div>
+    </div>
+    
