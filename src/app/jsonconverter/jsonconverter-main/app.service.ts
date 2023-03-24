@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class JSONService {
 
     constructor(private http: HttpClient) { }
-url : string="http://103.93.16.19:33298/bf/validate";
+url : string="http://techlearnings.in:33298/bf/validate";
   
     validatejson(model: string): Observable<any> {
 //alert("inside service");
