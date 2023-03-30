@@ -2,21 +2,26 @@
     <!-- Content here -->
    
   
-  
+    <app-json-converter-header></app-json-converter-header>
   <div class="row">
     
-    <app-json-converter-header></app-json-converter-header>
+
   
-  <div class="col-sm-2">
-      <app-json-converter-sidebar ></app-json-converter-sidebar>
+    <!--  <div class="col-sm-2">
+       <app-json-converter-sidebar ></app-json-converter-sidebar> 
+        </div>
+        -->
+        <div class="col-sm-5">
+        <app-json-converter-input (submitEvent)="SubmitButton($event)"></app-json-converter-input>
+      </div>
+      <div class="col-sm-2">
+        <app-json-converter-midgrid></app-json-converter-midgrid>
       </div>
       <div class="col-sm-5">
-      <app-json-converter-input (submitEvent)="SubmitButton($event)"></app-json-converter-input>
+      <app-json-converter-output [result]="test" [temp]="temp"></app-json-converter-output>
     </div>
-    <div class="col-sm-5">
-    <app-json-converter-output [result]="test" [temp]="temp"></app-json-converter-output>
-  </div>
-  </div>
+    </div>
+  
   
   
   </div>

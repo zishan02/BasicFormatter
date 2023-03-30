@@ -9,6 +9,7 @@ import { JsonConverterOutputComponent } from './json-converter-output/json-conve
 import { JsonConverterSidebarComponent } from './json-converter-sidebar/json-converter-sidebar.component';
 import { JsonConverterInputComponent } from './json-converter-input/json-converter-input.component';
 import { JsonConverterHeaderComponent } from './json-converter-header/json-converter-header.component';
+import { JsonConverterMidgridComponent } from './json-converter-midgrid/json-converter-midgrid.component';
 
 
 const route: Routes = [
@@ -16,7 +17,7 @@ const route: Routes = [
   ];
 
 @NgModule({
-  declarations: [JsonconverterMainComponent,JsonConverterOutputComponent,JsonConverterSidebarComponent,JsonConverterInputComponent,JsonConverterHeaderComponent],
+  declarations: [JsonconverterMainComponent,JsonConverterOutputComponent,JsonConverterSidebarComponent,JsonConverterInputComponent,JsonConverterHeaderComponent, JsonConverterMidgridComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(route),
