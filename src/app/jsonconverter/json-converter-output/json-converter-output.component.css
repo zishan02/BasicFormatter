@@ -6,3 +6,7 @@
 
     height: 100%;
 }
+pre {
+
+    white-space: initial;
+}
