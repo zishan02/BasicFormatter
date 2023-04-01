@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { JSONService } from '../jsonconverter-main/app.service';
 
 @Component({
   selector: 'app-json-converter-midgrid',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./json-converter-midgrid.component.css']
 })
 export class JsonConverterMidgridComponent {
+@Output() testevent=new EventEmitter<null>();
 
+constructor(private service:JSONService){}
+
+onClick()
+{
+  this.service.sendValue("save data")
+} 
 }

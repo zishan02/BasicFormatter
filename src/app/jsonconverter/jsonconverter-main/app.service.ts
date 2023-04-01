@@ -1,20 +1,20 @@
 import { HttpClient, HttpErrorResponse, HttpResponse, JsonpClientBackend } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable, Output } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http';
 import { InputForm } from './InputForm';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable()
 export class JSONService {
-
+ 
     constructor(private http: HttpClient) { }
 url : string="https://techlearnings.in:8443/bf/validate";
-  
     validatejson(model: string): Observable<any> {
 //alert("inside service");
         const httpOptions = { 
           headers: new HttpHeaders(
-            { 'Content-Type': 'application/json',
+            { 
+              'Content-Type':'application/json',
             'Access-Control-Allow-Origin': '*' }
           ) 
         };
@@ -25,5 +25,11 @@ url : string="https://techlearnings.in:8443/bf/validate";
    
      
       }
-
+      private mySubjectSource = new Subject<any>();
+      myObservable=this.mySubjectSource.asObservable();
+      sendValue(value:any)
+      {
+        this.mySubjectSource.next(value);
+      }
+ 
 }
