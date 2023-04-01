@@ -25,7 +25,7 @@ console.log(data.text);
    ngOnInit()
   {
     this.newservice.myObservable.subscribe(res=>{
-      //this.myForm?.ngSubmit.emit();
+      this.myForm?.ngSubmit.emit();
     })
   } 
 }
