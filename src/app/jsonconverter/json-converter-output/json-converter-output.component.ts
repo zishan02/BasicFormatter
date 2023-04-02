@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class JsonConverterOutputComponent {
 
-  @Input() temp :string="";
-  @Input() result:string="";
+  @Input() temp :string ='';
+  @Input() result:string='';
 
 }
