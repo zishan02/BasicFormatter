@@ -27,9 +27,18 @@ url : string="https://techlearnings.in:8443/bf/validate";
       }
       private mySubjectSource = new Subject<any>();
       myObservable=this.mySubjectSource.asObservable();
+
+      private clearSource = new Subject<any>();
+      clearObservable=this.clearSource.asObservable();
+
       sendValue(value:any)
       {
         this.mySubjectSource.next(value);
+      }
+
+      clearValue(value:any)
+      {
+        this.clearSource.next(value);
       }
  
 }

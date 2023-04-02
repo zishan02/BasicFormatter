@@ -14,6 +14,11 @@ constructor(private service:JSONService){}
 
 onClick()
 {
-  this.service.sendValue("save data")
+  this.service.sendValue("av");
 } 
+
+onClear(){
+
+  this.service.clearValue("clear");
+}
 }

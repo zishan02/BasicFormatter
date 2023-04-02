@@ -13,6 +13,7 @@ export class JsonconverterMainComponent {
   constructor(public service :JSONService ){
   
   }
+
    test: string="";
    temp : string="";
    model =new InputForm("");
@@ -31,4 +32,5 @@ export class JsonconverterMainComponent {
  
  }
  );}
+
 }

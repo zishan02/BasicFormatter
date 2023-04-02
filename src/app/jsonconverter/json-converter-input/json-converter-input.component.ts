@@ -24,5 +24,10 @@ console.log(data.text);
     this.service.myObservable.subscribe(res=>{
       this.myForm?.ngSubmit.emit();
     })
+    this.service.clearObservable.subscribe(res=>{
+      this.myForm?.reset();
+    })
+
+   
   } 
 }
