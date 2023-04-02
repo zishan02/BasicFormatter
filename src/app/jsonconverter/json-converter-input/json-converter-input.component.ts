@@ -14,17 +14,14 @@ export class JsonConverterInputComponent extends JsonconverterMainComponent impl
   @Output() submitEvent=new EventEmitter<any>();
   @Output() ngSubmit=new EventEmitter<any>();
   @ViewChild('myForm') myForm: NgForm | undefined;
-  constructor(private newservice :JSONService ){
-    super(newservice);
-  }
-
+ 
   callParent(data :InputForm):void {
 console.log(data.text);
     this.submitEvent.emit(data);
   }
    ngOnInit()
   {
-    this.newservice.myObservable.subscribe(res=>{
+    this.service.myObservable.subscribe(res=>{
       this.myForm?.ngSubmit.emit();
     })
   } 

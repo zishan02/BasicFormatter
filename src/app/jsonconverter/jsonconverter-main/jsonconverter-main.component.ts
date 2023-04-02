@@ -10,7 +10,7 @@ import { InputForm } from './InputForm';
   styleUrls: ['./jsonconverter-main.component.css']
 })
 export class JsonconverterMainComponent {
-  constructor(private service :JSONService ){
+  constructor(public service :JSONService ){
   
   }
    test: string="";
