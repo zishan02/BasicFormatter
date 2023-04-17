@@ -6,7 +6,7 @@ import { Observable, Subject } from 'rxjs';
 
 @Injectable()
 export class JSONService {
- 
+  
     constructor(private http: HttpClient) { }
 url : string="https://techlearnings.in:8443/bf/validate";
     validatejson(model: string): Observable<any> {
