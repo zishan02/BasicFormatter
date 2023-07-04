@@ -20,6 +20,7 @@ url : string="https://techlearnings.in/validate";
         };
         //alert(model);
         console.log(model);
+    
       return  this.http.post(this.url, model, httpOptions);
   
    

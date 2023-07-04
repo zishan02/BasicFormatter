@@ -26,6 +26,6 @@ const route: Routes = [
 
   ],
   exports:[JsonconverterMainComponent],
-  providers: [JSONService],
+  providers: [JSONService,JsonConverterMidgridComponent],
 })
 export class JSONConverterModule { }

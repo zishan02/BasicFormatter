@@ -1,3 +1,6 @@
-<div class="row"><button (click)="onClick()" type="button" class="btn btn-primary">-></button></div>
+<div class="row"><button (click)="onClick()" type="button" class="btn btn-primary">->
+    <div class="spinner-border" role="status" *ngIf="this.getLoading()">
+      </div>
+</button></div>
 <div class="row"><button (click)="onClear()" type="button" class="btn btn-primary">Clear</button></div>
 

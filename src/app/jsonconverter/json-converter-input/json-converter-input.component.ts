@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { JsonConverterMidgridComponent } from '../json-converter-midgrid/json-converter-midgrid.component';
 import { JSONService } from '../jsonconverter-main/app.service';
 import { InputForm } from '../jsonconverter-main/InputForm';
 import { JsonconverterMainComponent } from '../jsonconverter-main/jsonconverter-main.component';
@@ -10,7 +11,7 @@ import { JsonconverterMainComponent } from '../jsonconverter-main/jsonconverter-
   styleUrls: ['./json-converter-input.component.css']
 })
 export class JsonConverterInputComponent extends JsonconverterMainComponent implements OnInit {
-
+  
   @Output() submitEvent=new EventEmitter<any>();
   @Output() ngSubmit=new EventEmitter<any>();
   @ViewChild('myForm') myForm: NgForm | undefined;

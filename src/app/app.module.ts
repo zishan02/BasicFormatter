@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { JSONConverterModule } from './jsonconverter/jsonconverter.module';
+import { TasksComponent } from './tasks/tasks.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,
