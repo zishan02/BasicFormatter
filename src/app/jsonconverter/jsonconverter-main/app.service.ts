@@ -14,8 +14,7 @@ url : string="https://techlearnings.in/validate";
         const httpOptions = { 
           headers: new HttpHeaders(
             { 
-              'Content-Type':'application/json',
-            'Access-Control-Allow-Origin': '*' }
+              'Content-Type':'application/json' }
           ) 
         };
         //alert(model);
